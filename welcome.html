@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles01.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>Welcome !!</h2>
+        <p>Thank you for logging in.</p>
+        <a id="dashboardLink" href="dashboard2.html">Go to your dashboard</a>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const user = urlParams.get('user');
+        document.getElementById('username').textContent = user;
+        document.getElementById('dashboardLink').href = 'dashboard2.html?user=' + encodeURIComponent(user);
+    </script>
+</body>
+</html>

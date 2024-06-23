@@ -1,0 +1,29 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.welcome-container h2 {
+    color: #2b2b2b;
+}
+
+.welcome-container p {
+    color: #666;
+}
+
+.welcome-container a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.welcome-container a:hover {
+    background-color: #0056b3;
+}

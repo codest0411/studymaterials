@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Study Portal</title>
+    <link rel="stylesheet" href="styles88.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Profile</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="dashboared2.html">Home</a></li>
+              
+            </ul>
+        </nav>
+        <section id="profile" class="content">
+            <h2>Profile Information</h2>
+            <div class="profile-picture">
+                <img id="profile-img" src="default-profile.png" alt="Profile Picture">
+                <input type="file" id="profile-picture-input" accept="image/*">
+                <button id="upload-btn">Upload</button>
+            </div>
+            <form>
+                <label for="username"> Change Username:</label>
+                <input type="text" id="username" name="username" value="username"><br><br>
+                
+                <label for="email">Change Email:</label>
+                <input type="email" id="email" name="email" value="email"><br><br>
+				
+				<a class="return-link" href="Dashboard2.html">
+				<button type="submit">Save Changes</button></a>
+				
+				<p> if you dont make any change then click here <a href="Dashboard2.html"> HOME</a></p>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
